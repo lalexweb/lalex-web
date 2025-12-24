@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  --color-foreground: #ffffff;
+  --color-background: #1c1d25;
+
+  --color-primary: #f06449;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #ff6a3d;
+  --color-secondary-foreground: #ffffff;
+
+  --color-accent: #e9eef5;
+  --color-accent-foreground: #0f172a;
+
+  --color-muted: #dfdfdf;
+  --color-muted-foreground: #1c1d25;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --color-border: #f6f8fb;
+  --color-ring: #0f172a;
+
+  --shadow-footer: inset 0 4px 46.6px -9px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--text-3xl);
+  line-height: 1;
+
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header,
+main,
+footer {
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 calc(var(--spacing) * 6);
+  max-width: 1400px;
+}
+
+.def-transition,
+.before-def-transition::before,
+.after-def-transition::after {
+  transition: 0.3s ease-out;
+}
