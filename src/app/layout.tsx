@@ -1,8 +1,8 @@
 import DynamicProvider from '@/components/layout/DynamicProvider';
 import Layout from '@/components/layout/Layout';
 import generalData from '@/shared/data/general.data';
-import type {Metadata} from 'next';
-import {Teko} from 'next/font/google';
+import type { Metadata } from 'next';
+import { Teko } from 'next/font/google';
 import '../styles/globals.css';
 
 const teko = Teko({
