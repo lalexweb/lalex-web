@@ -1,9 +1,9 @@
-import {Button} from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import PAGES from '@/shared/config/pages.config';
 import LOCALES from '@/shared/locales';
 import Image from 'next/image';
 import Link from 'next/link';
-import {HiChevronLeft} from 'react-icons/hi';
+import { HiChevronLeft } from 'react-icons/hi';
 
 export default function NotFoundPage() {
   return (
@@ -17,7 +17,7 @@ export default function NotFoundPage() {
                 alt={LOCALES.pages.notFound.title}
                 width={200}
                 height={200}
-                className="aspect-square flex-shrink-0 max-w-[200px] w-full opacity-20"
+                className="aspect-square shrink-0 max-w-[200px] w-full opacity-20"
                 priority
                 fetchPriority="high"
               />
@@ -35,7 +35,7 @@ export default function NotFoundPage() {
               size="lg"
               className="group"
             >
-              <HiChevronLeft className="size-4 aspect-square flex-shrink-0 group-hover:-translate-x-1 def-transition" />
+              <HiChevronLeft className="size-4 aspect-square shrink-0 group-hover:-translate-x-1 def-transition" />
               {LOCALES.pages.notFound.actions.returnHome}
             </Button>
           </div>

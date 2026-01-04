@@ -6,7 +6,7 @@ import LOCALES from '@/shared/locales';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FaLinkedin, FaSquareFacebook, FaSquareGithub, FaSquareInstagram} from 'react-icons/fa6';
+import { FaLinkedin, FaSquareGithub, FaSquareInstagram, FaYoutube } from 'react-icons/fa6';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex items-end gap-2">
             <Link
               href={PAGES.home}
-              className="flex-shrink-0 group"
+              className="shrink-0 group"
             >
               <Image
                 src="/logo.svg"
@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="flex gap-2">
             <Link
               href={generalData.socials.linkedin}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaLinkedin className={clsx('aspect-square', 'size-8 md:size-12')} />
@@ -47,26 +47,26 @@ export default function Footer() {
 
             <Link
               href={generalData.socials.instagram}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaSquareInstagram className={clsx('aspect-square', 'size-8 md:size-12')} />
             </Link>
 
             <Link
-              href={generalData.socials.facebook}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
-              target="_blank"
-            >
-              <FaSquareFacebook className={clsx('aspect-square', 'size-8 md:size-12')} />
-            </Link>
-
-            <Link
               href={generalData.socials.github}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaSquareGithub className={clsx('aspect-square', 'size-8 md:size-12')} />
+            </Link>
+
+            <Link
+              href={generalData.socials.youtube}
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
+              target="_blank"
+            >
+              <FaYoutube className={clsx('aspect-square', 'size-8 md:size-12')} />
             </Link>
           </div>
         </div>

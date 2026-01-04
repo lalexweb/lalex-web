@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FaLinkedin, FaSquareFacebook, FaSquareGithub, FaSquareInstagram} from 'react-icons/fa6';
+import { FaLinkedin, FaSquareGithub, FaSquareInstagram, FaYoutube } from 'react-icons/fa6';
 
 const DynamicBackgroundEffects = dynamic(() => import('@/components/pages/home/HomeBackgroundEffects'), {
   ssr: false,
@@ -24,7 +24,7 @@ export default function HomeMainSection() {
             alt={LOCALES.pages.home.main.logo}
             width={500}
             height={500}
-            className="aspect-square flex-shrink-0 max-w-[500px] w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="aspect-square shrink-0 max-w-[500px] w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             priority
             fetchPriority="high"
           />
@@ -38,7 +38,7 @@ export default function HomeMainSection() {
           <div className={clsx('flex absolute', 'bottom-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 right-auto md:right-0 left-0 md:left-auto md:flex-col gap-2 md:gap-4')}>
             <Link
               href={generalData.socials.linkedin}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaLinkedin className={clsx('aspect-square', 'size-16 md:size-20')} />
@@ -46,26 +46,26 @@ export default function HomeMainSection() {
 
             <Link
               href={generalData.socials.instagram}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaSquareInstagram className={clsx('aspect-square', 'size-16 md:size-20')} />
             </Link>
 
             <Link
-              href={generalData.socials.facebook}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
-              target="_blank"
-            >
-              <FaSquareFacebook className={clsx('aspect-square', 'size-16 md:size-20')} />
-            </Link>
-
-            <Link
               href={generalData.socials.github}
-              className="flex-shrink-0 def-transition opacity-40 hover:opacity-100"
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
               target="_blank"
             >
               <FaSquareGithub className={clsx('aspect-square', 'size-16 md:size-20')} />
+            </Link>
+
+            <Link
+              href={generalData.socials.youtube}
+              className="shrink-0 def-transition opacity-40 hover:opacity-100"
+              target="_blank"
+            >
+              <FaYoutube className={clsx('aspect-square', 'size-16 md:size-20')} />
             </Link>
           </div>
         </div>

@@ -6,8 +6,8 @@ import LOCALES from '@/shared/locales';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ComponentType, CSSProperties} from 'react';
-import {FaF, FaFacebook, FaGithub, FaK, FaLinkedin, FaSquareInstagram, FaUpwork} from 'react-icons/fa6';
+import { ComponentType, CSSProperties } from 'react';
+import { FaGithub, FaLinkedin, FaSquareInstagram, FaYoutube } from 'react-icons/fa6';
 
 export default function HomeAboutSection() {
   return (
@@ -19,7 +19,7 @@ export default function HomeAboutSection() {
 
             <Link
               href={PAGES.home}
-              className="flex-shrink-0 group"
+              className="shrink-0 group"
             >
               <Image
                 src="/logo.svg"
@@ -57,7 +57,7 @@ export default function HomeAboutSection() {
                       key={project.link}
                       href={project.link}
                       target="_blank"
-                      className="flex-shrink-0 group"
+                      className="shrink-0 group"
                     >
                       <Image
                         src={project.image}
@@ -78,7 +78,7 @@ export default function HomeAboutSection() {
                   <Link
                     href={generalData.socials.linkedin}
                     target="_blank"
-                    className="flex-shrink-0 group"
+                    className="shrink-0 group"
                   >
                     <FaLinkedin className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
                   </Link>
@@ -86,49 +86,25 @@ export default function HomeAboutSection() {
                   <Link
                     href={generalData.socials.instagram}
                     target="_blank"
-                    className="flex-shrink-0 group"
+                    className="shrink-0 group"
                   >
                     <FaSquareInstagram className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
                   </Link>
 
                   <Link
-                    href={generalData.socials.facebook}
-                    target="_blank"
-                    className="flex-shrink-0 group"
-                  >
-                    <FaFacebook className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
-                  </Link>
-
-                  <Link
                     href={generalData.socials.github}
                     target="_blank"
-                    className="flex-shrink-0 group"
+                    className="shrink-0 group"
                   >
                     <FaGithub className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
                   </Link>
 
                   <Link
-                    href={generalData.socials.kwork}
+                    href={generalData.socials.youtube}
                     target="_blank"
-                    className="flex-shrink-0 group"
+                    className="shrink-0 group"
                   >
-                    <FaK className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
-                  </Link>
-
-                  <Link
-                    href={generalData.socials.upWork}
-                    target="_blank"
-                    className="flex-shrink-0 group"
-                  >
-                    <FaUpwork className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
-                  </Link>
-
-                  <Link
-                    href={generalData.socials.fiverr}
-                    target="_blank"
-                    className="flex-shrink-0 group"
-                  >
-                    <FaF className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
+                    <FaYoutube className={clsx('aspect-square text-background/80 group-hover:text-primary def-transition', 'size-full md:size-20')} />
                   </Link>
                 </div>
               </div>
@@ -153,7 +129,7 @@ function SkillItem({...item}: SkillItemProps) {
     <div className={clsx('flex gap-1', 'flex-col md:flex-row md:items-center')}>
       <div className={clsx('flex items-center justify-center gap-1 h-10 bg-background text-foreground rounded-md', 'md:w-36')}>
         <item.icon
-          className="size-6 aspect-square flex-shrink-0"
+          className="size-6 aspect-square shrink-0"
           style={{
             color: item.iconColor,
           }}
@@ -168,7 +144,7 @@ function SkillItem({...item}: SkillItemProps) {
         }).map((_, index) => (
           <div
             key={index}
-            className={clsx('aspect-square flex-shrink-0 border-2 border-background rounded-md', 'flex-1 size-auto md:size-8')}
+            className={clsx('aspect-square shrink-0 border-2 border-background rounded-md', 'flex-1 size-auto md:size-8')}
             style={{
               backgroundColor: index < item.level ? item.levelColor : 'transparent',
             }}

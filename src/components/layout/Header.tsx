@@ -1,7 +1,7 @@
 'use client';
 
-import {useContactsModal} from '@/components/modals/ContactsModal';
-import {Button} from '@/components/ui/Button';
+import { useContactsModal } from '@/components/modals/ContactsModal';
+import { Button } from '@/components/ui/Button';
 import PAGES from '@/shared/config/pages.config';
 import generalData from '@/shared/data/general.data';
 import LOCALES from '@/shared/locales';
@@ -17,7 +17,7 @@ export default function Header() {
         <div className="flex items-center justify-between gap-2 h-full">
           <Link
             href={PAGES.home}
-            className="flex-shrink-0 group"
+            className="shrink-0 group"
           >
             <Image
               src="/logo.svg"
