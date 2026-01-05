@@ -14,7 +14,7 @@ const generalData = {
     instagram: 'https://www.instagram.com/lalex.web/',
     facebook: 'https://www.facebook.com/profile.php?id=61557249545200',
     github: 'https://github.com/lalexweb',
-    youtube: 'https://www.youtube.com/@lalex-web',
+    youtube: 'https://www.youtube.com/@lalex-web?sub_confirmation=1',
   },
 
   files: {
