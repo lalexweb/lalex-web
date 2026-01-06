@@ -11,7 +11,7 @@ const generalData = {
     email: 'lalexweb31@gmail.com',
 
     linkedin: 'https://www.linkedin.com/in/lalex-web',
-    instagram: 'https://www.instagram.com/lalex.web/',
+    instagram: 'https://www.instagram.com/lalex.web?utm_source=qr&igsh=MTQ4bHBla3IyOTQyMg==',
     facebook: 'https://www.facebook.com/profile.php?id=61557249545200',
     github: 'https://github.com/lalexweb',
     youtube: 'https://www.youtube.com/@lalex-web?sub_confirmation=1',
