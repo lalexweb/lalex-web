@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaSquareGithub, FaSquareInstagram, FaYoutube } from 'react-icons/fa6';
+import {FaLinkedin, FaSquareGithub, FaSquareInstagram, FaYoutube} from 'react-icons/fa6';
 
 const DynamicBackgroundEffects = dynamic(() => import('@/components/pages/home/HomeBackgroundEffects'), {
   ssr: false,
