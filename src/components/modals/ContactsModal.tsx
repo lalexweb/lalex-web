@@ -11,7 +11,7 @@ interface ContactsModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-export const ContactsModal = ({open, onOpenChange}: ContactsModalProps) => {
+export default function ContactsModal({open, onOpenChange}: ContactsModalProps) {
   return (
     <Dialog
       open={open}
@@ -74,4 +74,4 @@ export const ContactsModal = ({open, onOpenChange}: ContactsModalProps) => {
       </DialogContent>
     </Dialog>
   );
-};
+}

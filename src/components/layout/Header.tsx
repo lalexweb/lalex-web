@@ -1,6 +1,6 @@
 'use client';
 
-import {ContactsModal} from '@/components/modals/ContactsModal';
+import ContactsModal from '@/components/modals/ContactsModal';
 import {Button} from '@/components/ui/Button';
 import generalData from '@/shared/data/general.data';
 import locales from '@/shared/locales';

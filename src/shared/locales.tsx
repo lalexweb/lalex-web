@@ -37,14 +37,14 @@ const locales = {
       main: {
         logo: 'Logo',
         title: 'Alexander Luginin',
-        description: 'Fullstack developer',
+        description: 'Software engineer',
       },
       about: {
         title: 'About',
         logo: 'Logo',
         description: (
           <>
-            Hi, I&apos;m <span className="text-primary">Alexander Luginin</span>. I&apos;m <span className="text-primary">a Fullstack developer</span> passionate about <span className="text-primary">building products that make people&apos;s lives better</span>. I&apos;m always exploring new
+            Hi, I&apos;m <span className="text-primary">Alexander Luginin</span>. I&apos;m <span className="text-primary">a Software engineer</span> passionate about <span className="text-primary">building products that make people&apos;s lives better</span>. I&apos;m always exploring new
             technologies, following IT trends, and <span className="text-primary">turning bold ideas into real projects</span>.
           </>
         ),
