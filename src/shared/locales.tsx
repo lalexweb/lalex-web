@@ -1,4 +1,4 @@
-const LOCALES = {
+const locales = {
   common: {
     close: 'Close',
   },
@@ -44,8 +44,8 @@ const LOCALES = {
         logo: 'Logo',
         description: (
           <>
-            Hi, I&apos;m <span className="text-primary">Alexander Luginin</span>. I&apos;m <span className="text-primary">a Fullstack developer</span> passionate about <span className="text-primary">building products that make people&apos;s lives better</span>. I&apos;m always exploring
-            new technologies, following IT trends, and <span className="text-primary">turning bold ideas into real projects</span>.
+            Hi, I&apos;m <span className="text-primary">Alexander Luginin</span>. I&apos;m <span className="text-primary">a Fullstack developer</span> passionate about <span className="text-primary">building products that make people&apos;s lives better</span>. I&apos;m always exploring new
+            technologies, following IT trends, and <span className="text-primary">turning bold ideas into real projects</span>.
           </>
         ),
         mySkills: 'My skills',
@@ -72,4 +72,4 @@ const LOCALES = {
   },
 } as const;
 
-export default LOCALES;
+export default locales;

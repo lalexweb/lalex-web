@@ -3,9 +3,9 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import * as React from 'react';
 
-import { cn } from '@/shared/lib/utils';
-import LOCALES from '@/shared/locales';
-import { HiX } from 'react-icons/hi';
+import {cn} from '@/shared/lib/utils';
+import locales from '@/shared/locales';
+import {HiX} from 'react-icons/hi';
 
 function Dialog({...props}: React.ComponentProps<typeof DialogPrimitive.Root>) {
   return (
@@ -87,7 +87,7 @@ function DialogContent({
               >
                 <HiX className="size-6 aspect-square shrink-0" />
 
-                <span className="sr-only">{LOCALES.common.close}</span>
+                <span className="sr-only">{locales.common.close}</span>
               </DialogPrimitive.Close>
             </div>
           )}
@@ -139,5 +139,4 @@ function DialogDescription({className, ...props}: React.ComponentProps<typeof Di
   );
 }
 
-export { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger };
-
+export {Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger};

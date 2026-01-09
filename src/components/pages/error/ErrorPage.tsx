@@ -1,9 +1,8 @@
-import { Button } from '@/components/ui/Button';
-import PAGES from '@/shared/config/pages.config';
-import LOCALES from '@/shared/locales';
+import {Button} from '@/components/ui/Button';
+import locales from '@/shared/locales';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiChevronLeft } from 'react-icons/hi';
+import {HiChevronLeft} from 'react-icons/hi';
 
 export default function Error500Page() {
   return (
@@ -14,7 +13,7 @@ export default function Error500Page() {
             <div className="relative">
               <Image
                 src="/logo.svg"
-                alt={LOCALES.pages.error.title}
+                alt={locales.pages.error.title}
                 width={200}
                 height={200}
                 className="aspect-square shrink-0 max-w-[200px] w-full opacity-20"
@@ -24,19 +23,19 @@ export default function Error500Page() {
             </div>
 
             <div className="flex flex-col">
-              <h2 className="text-4xl md:text-6xl text-error">{LOCALES.pages.error.title}</h2>
+              <h2 className="text-4xl md:text-6xl text-error">{locales.pages.error.title}</h2>
 
-              <p className="text-muted max-w-lg">{LOCALES.pages.error.description}</p>
+              <p className="text-muted max-w-lg">{locales.pages.error.description}</p>
             </div>
 
             <Button
               as={Link}
-              href={PAGES.home}
+              href="/"
               size="lg"
               className="group"
             >
               <HiChevronLeft className="size-4 aspect-square shrink-0 group-hover:-translate-x-1 def-transition" />
-              {LOCALES.pages.error.actions.returnHome}
+              {locales.pages.error.actions.returnHome}
             </Button>
           </div>
         </div>
